@@ -1,0 +1,16 @@
+name: LuckCmd
+version: '${project.version}'
+main: ink.magma.luckcmd.LuckCmd
+api-version: 1.18
+softdepend:
+  - PlaceholderAPI
+authors: [MagmaBlock]
+description: Run a command by random!
+commands:
+  luckcmd:
+    usage: /luckcmd <操作> <参数>
+permissions:
+  zth.luckcmd.run:
+    default: true
+  zth.luckcmd.admin:
+    default: op

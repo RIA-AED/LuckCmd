@@ -1,0 +1,9 @@
+cmd-groups:
+  demo:
+    - "[@delay 20][@for 2 20]say %player_name% 这是一条测试消息1"
+    - msg %player_name% 这是一条测试消息2
+    - "msg %player_name% 你的UUID是: %player_uuid%"
+    - summon minecraft:experience_bottle %player_x% %player_y% %player_z%
+    - minecraft:tp %player_name% %player_x% %math_{player_y}+10% %player_z%
+    - msg %player_name% 你今天的幸运数字是 %math_FLOOR(RANDOM()*100)%
+    - msg %player_name% 欢迎回来! 您上一次登录是 %player_last_played_formatted%, 您本次登录的 IP 地址是 %player_ip%, 您已经存活了 %player_minutes_lived% 分钟
